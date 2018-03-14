@@ -3,7 +3,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: solid 0.25px powderblue; */
 }
 img {
   max-width: 100%;
@@ -22,10 +21,12 @@ h2 {
 }
 h3 {
   font-family: 'Maitree', serif;
+  font-weight: lighter;
   /* font-size: 1.2em;
   margin: 0; */
 }
 h4 {
+  font-weight: lighter;
   /* font-size: 1.5em;
   margin: 0; */
 }
@@ -37,10 +38,9 @@ h6 {
 
 }
 p {
-
+  font-weight: 300;
 }
 ul {
-  font-weight: 200;
   line-height: 1.5;
   padding-left: 20px;
 }
@@ -56,6 +56,182 @@ ul {
 }
 .text-white {
   color: white;
+}
+
+/* buttons and links */
+.button-main {
+  padding: 1em 10%;
+  background-color: #97abb1;
+  border: none;
+  border-radius: 1px 25px;
+  font-size: 1em;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.button-main:hover {
+  border-radius: 0 40px;
+  border: none;
+}
+
+
+/* sections */
+section {
+  padding: 2% 7%;
+}
+/* .wide-section {
+  padding: 2.5% 10%;
+}
+.space-left {
+  padding-left: 1%;
+}
+.space-right {
+  padding-right: 1%;
+}
+.start-button {
+  padding-top: 1%;
+  padding-bottom: 2%;
+} */
+@media all and (max-width:1024px) {
+  /* .space-left {
+    padding-left: 0;
+  }
+  .space-right {
+    padding-right: 0;
+  }
+  .start-button {
+    padding-top: 3%;
+    padding-bottom: 2%;
+  } */
+}
+@media all and (max-width:576px) {
+  /* section,.wide-section {
+    padding: 5%;
+  }
+  .start-button {
+    display: none;
+  } */
+}
+
+
+/* backgrounds and containers */
+.bg-white {
+  background-color: white;
+}
+.bg-grey {
+  background-color: rgba(151, 171, 177, 80);
+}
+.bg-gold {
+  background-color: rgba(199, 180, 115, 80)
+}
+.box-shadow {
+  box-shadow: box-shadow: 2px 2px 10px #cdd5d1;
+}
+
+
+/* header and nav styles */
+nav {
+  position: fixed;
+  height: 45px;
+  width: 100%;
+  z-index: 9999;
+}
+nav h2 {
+  font-size: 1em;
+  font-weight: lighter;
+}
+.logo {
+  padding-top: 45px;
+  height: 20vh;
+  width: auto;
+}
+/* .header-section {
+  padding-top: 45px;
+} */
+
+/* hero styles */
+.hero-section {
+  padding: 0 7%;
+  height: 70vh;
+  margin-bottom: 10vh;
+}
+.hero-image-home {
+  background-image: url("/images/yenmakerworkshop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+
+/* overlaps */
+.overlap-over-left {
+  position: relative;
+  z-index: 99;
+  background-color: white;
+  min-height: 330px;
+  min-width: 450px;
+}
+.overlap-under-right {
+  position: absolute;
+  margin-left: 27.5%;
+  margin-top: -1.5%;
+  padding: 7% 3% 7% 15%;
+  min-height: 370px;
+  min-width: 550px;
+}
+.overlap-under-left {
+  position: absolute;
+  margin-top: -1.5%;
+  padding: 7% 14% 7% 4%;
+  min-height: 370px;
+  min-width: 550px;
+}
+.overlap-over-right {
+  position: relative;
+  z-index: 99;
+  margin-left: 49%;
+  background-color: white;
+  min-height: 330px;
+  min-width: 450px;
+}
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:576px) {
+  .overlap-over-left {
+    position: static;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 2%;
+  }
+  .overlap-under-right {
+    position: static;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 2%;
+  }
+  .overlap-under-left {
+    position: static;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 2%;
+  }
+  .overlap-over-right {
+    position: static;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 2%;
+  }
 }
 
 

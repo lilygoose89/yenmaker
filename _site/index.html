@@ -8,9 +8,9 @@
   <title></title>
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
-  <link rel="alternate" href="" hreflang="en" />
-  <link rel="alternate" href="" hreflang="th" />
-  <link href="https://fonts.googleapis.com/css?family=Kanit|Maitree&amp;subset=thai" rel="stylesheet">
+  <!-- <link rel="alternate" href="" hreflang="en" />
+  <link rel="alternate" href="" hreflang="th" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400|Maitree&amp;subset=thai" rel="stylesheet">
   <link rel="stylesheet" href="/styles/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -19,56 +19,65 @@
   <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-  <header>
-    <div>
-      <h2><a><i class="fa fa-bars" aria-hidden="true"></i> Menu</a></h2>
-    </div>
+  <header class="header-section">
+    <nav class="bg-grey">
+      <a><h2 class="pad-all-xs"><i class="fa fa-bars" aria-hidden="true"></i> Menu</h2></a>
+    </nav>
     <div class="text-center">
-      <img src="/images/yenmakerlogo-small.jpg" alt="yen maker logo"/>
+      <img src="/images/yenmakerlogo-small.jpg" alt="yen maker logo" class="logo"/>
     </div>
   </header>
   <section id="hero" class="hero-section">
-  <div class="hero-image">
-    <a href=""><button>Shop Now</button></a>
+  <div class="hero-image-home text-center grid-bottom">
+    <a href="" class="col-12"><button class="button-main">Shop Now</button></a>
   </div>
 </section>
 <section id="featured">
   <h2>Featured Products</h2>
   <div class="grid">
-    <div>
-      <img />
+    <div class="col-4">
+      <img src="/images/product.jpg" alt="ring" class="featured-product"/>
     </div>
-    <div>
-      <img />
+    <div class="col-4">
+      <img src="/images/product.jpg" alt="ring" class="featured-product"/>
     </div>
-    <div>
-      <img />
+    <div class="col-4">
+      <img src="/images/product.jpg" alt="ring" class="featured-product"/>
     </div>
   </div>
 </section>
 <section>
-  <div class="container-overlap">
-    <div class="overlap-img-left">
+  <div class="grid pad-all-s">
+    <div class="col-6_sm-12 overlap-over-left">
 
     </div>
-    <div class="overlap-box-right bg-gold">
+    <div class="col-6_sm-12 overlap-under-right bg-gold">
       <h3>Handcrafted</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
   </div>
-  <div class="container-overlap">
-    <div class="overlap-box-left bg-gold">
+  <div class="grid pad-all-s">
+    <div class="col-6_sm-12 overlap-over-right">
+
+    </div>
+    <div class="col-6_sm-12 overlap-under-left bg-gold">
       <h3>Inspired by Nature</h3>
-    </div>
-    <div class="overlap-img-right">
-
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
   </div>
-  <div class="container-overlap">
-    <div class="overlap-img-left">
+  <div class="grid pad-all-s">
+    <div class="col-6_sm-12 overlap-over-left">
 
     </div>
-    <div class="overlap-box-right bg-gold">
+    <div class="col-6_sm-12 overlap-under-right bg-gold">
       <h3>Minimalist</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
   </div>
 </section>
@@ -76,9 +85,9 @@
   <div class="grid">
     <div class="col-3">
       <h3>Who we are</h3>
-      <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque purus semper eget duis at tellus at urna. Blandit turpis cursus in hac habitasse platea. Blandit massa enim nec dui nunc mattis enim.
+      <p class="pad-top-s pad-bottom-s">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque purus semper eget duis at tellus at urna. Blandit turpis cursus in hac habitasse platea. Blandit massa enim nec dui nunc mattis enim.
       </p>
-      <a href="about"><button>Learn More</button></a>
+      <a href="about"><button class="button-main">Learn More</button></a>
     </div>
     <div class="col-9">
       <img />

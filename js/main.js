@@ -5,3 +5,7 @@ $(document).ready(function(){
   console.log('ready!');
 
 });
+
+$('#nav-icon3').click(function(){
+  $(this).toggleClass('open');
+});

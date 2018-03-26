@@ -21,21 +21,41 @@
 <body>
   <header class="header-section">
     <nav class="bg-grey">
-      <a><h2 class="pad-all-xs"><i class="fa fa-bars" aria-hidden="true"></i> Menu</h2></a>
+      <div class="hamburger-wrapper">
+        <div id="nav-icon3" class="col-1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <h2 class="says-menu">Menu</h2>
     </nav>
+    <!-- <nav id="sidebar" class="sidebar">
+      <div class="pad-top-l main">
+        <h3><a href="#0">Home</a></h3>
+        <h3><a href="#0">About</a></h3>
+        <h3><a href="#0">Contact</a></h3>
+        <h3><a href="#0">Cart <span>(5)</span></a></h3>
+      </div>
+      <div class="pad-top-m sub">
+        <h5><a href="#0">FAQ &amp; Shipping</a></h5>
+        <h5><a href="#0">Terms &amp; Conditions</h5>
+      </div>
+    </nav> -->
     <div class="text-center">
       <img src="/images/yenmakerlogo-small.jpg" alt="yen maker logo" class="logo"/>
     </div>
   </header>
   {{content}}
-  <footer class="bg-dark text-center text-white pad-top-xs pad-bottom-xs">
-    <div class="grid-middle-center pad-top-xs pad-bottom-xs">
+  <footer class="bg-dark text-center text-white pad-top-xs pad-bottom-xs grid-center">
+    <div class="col-2_sm-4 grid-middle-spaceBetween pad-top-xs">
       <a href="mailto:yenmakerspace@gmail.com" target=blank><img src="/images/envelope.png" alt="email" class="icon"/></a>
       <a href="https://www.facebook.com/YEN-maker-581275005355047/" target=blank><img src="/images/facebook.png" alt="facebook" class="icon"/></a>
       <a href="https://www.instagram.com/yenmaker/" target=blank><img src="/images/instagram.png" alt="instagram" class="icon"/></a>
     </div>
-    <h6 class=""> <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://cnxweb.site" target=blank>CNX Web</a> for Yen Maker <script type="text/javascript">
-  document.write(new Date().getFullYear());
+    <h6 class="col-12 pad-top-xs"> <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://cnxweb.site" target=blank>CNX Web</a> for Yen Maker <script type="text/javascript">
+  document.write(new Date().getFdivlYear());
 </script></h6>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

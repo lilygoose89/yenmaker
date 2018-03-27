@@ -19,37 +19,40 @@
   <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-  <header class="header-section">
+  <div id="overlay">
+    <!-- overlay for when sidebar menu active -->
+  </div>
+  <header id="header" class="header-section">
     <nav class="bg-grey">
-      <div class="hamburger-wrapper">
-        <div id="nav-icon3" class="col-1">
+      <div id="nav-icon3">
+        <div id="nav-lines">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </div>
+        <div class="says-menu">Menu</div>
       </div>
-      <h2 class="says-menu">Menu</h2>
     </nav>
-    <!-- <nav id="sidebar" class="sidebar">
-      <div class="pad-top-l main">
-        <h3><a href="#0">Home</a></h3>
-        <h3><a href="#0">About</a></h3>
-        <h3><a href="#0">Contact</a></h3>
-        <h3><a href="#0">Cart <span>(5)</span></a></h3>
+    <nav id="sidebar" class="sidebar">
+      <div class="pad-top-l pad-all-s main">
+        <p><a href="/">Home</a></p>
+        <p><a href="/about">About</a></p>
+        <p><a href="/collections">Collections</a></p>
+        <p><a href="">Cart <span>(5)</span></a></p>
       </div>
-      <div class="pad-top-m sub">
-        <h5><a href="#0">FAQ &amp; Shipping</a></h5>
-        <h5><a href="#0">Terms &amp; Conditions</h5>
+      <div class="pad-top-m pad-all-s">
+        <p class="sublinks"><a href="">FAQ &amp; Shipping</a></p>
+        <p class="sublinks"><a href="">Terms &amp; Conditions</p>
       </div>
-    </nav> -->
+    </nav>
     <div class="text-center">
       <img src="/images/yenmakerlogo-small.jpg" alt="yen maker logo" class="logo"/>
     </div>
   </header>
   <section class="hero-section">
   <div class="hero-image-about text-center grid-bottom box-shadow">
-    <a href="" class="col-12"><button class="button-main">Shop Now</button></a>
+    <!-- <a href="" class="col-12"><button class="button-main">Shop Now</button></a> -->
   </div>
 </section>
 <section>
@@ -63,7 +66,9 @@
       </p>
     </div>
   </div>
-  <h2>Welcome to our workshop</h2>
+</section>
+<section>
+  <h2 class="pad-bottom-xs">Welcome to our workshop</h2>
   <!-- image carousel -->
 </section>
 

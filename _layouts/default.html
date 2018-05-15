@@ -1,66 +1,13 @@
 <!DOCTYPE html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <!-- End Google Analytics -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-  <title>{{page.title}}</title>
-  <meta name="description" content="{{page.description}}"/>
-  <meta name="keywords" content="{{page.keywords}}"/>
-  <!-- <link rel="alternate" href="" hreflang="en" />
-  <link rel="alternate" href="" hreflang="th" /> -->
-  <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400|Maitree&amp;subset=thai" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-  <div id="overlay">
-    <!-- overlay for when sidebar menu active -->
-  </div>
-  <header id="header" class="header-section">
-    <nav class="bg-grey">
-      <div id="nav-icon3">
-        <div id="nav-lines">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="says-menu">Menu</div>
-      </div>
-    </nav>
-    <nav id="sidebar" class="sidebar">
-      <div class="pad-top-l pad-all-s main">
-        <p><a href="/">Home</a></p>
-        <p><a href="/about">About</a></p>
-        <p><a href="/collections">Collections</a></p>
-        <p><a href="">Cart <span>(5)</span></a></p>
-      </div>
-      <div class="pad-top-m pad-all-s">
-        <p class="sublinks"><a href="">FAQ &amp; Shipping</a></p>
-        <p class="sublinks"><a href="">Terms &amp; Conditions</p>
-      </div>
-    </nav>
-    <div class="text-center">
-      <img src="/images/yenmakerlogo-small.jpg" alt="yen maker logo" class="logo"/>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="overlay">
+      <!-- overlay for when sidebar menu active -->
     </div>
-  </header>
-  {{content}}
-  <footer class="bg-dark text-center text-white pad-top-xs pad-bottom-xs grid-center">
-    <div class="col-2_sm-4 grid-middle-spaceBetween pad-top-xs">
-      <a href="mailto:yenmakerspace@gmail.com" target=blank><img src="/images/envelope.png" alt="email" class="icon"/></a>
-      <a href="https://www.facebook.com/YEN-maker-581275005355047/" target=blank><img src="/images/facebook.png" alt="facebook" class="icon"/></a>
-      <a href="https://www.instagram.com/yenmaker/" target=blank><img src="/images/instagram.png" alt="instagram" class="icon"/></a>
-    </div>
-    <h6 class="col-12 pad-top-xs"> <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://cnxweb.site" target=blank>CNX Web</a> for Yen Maker <script type="text/javascript">
-  document.write(new Date().getFdivlYear());
-</script></h6>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="/js/main.js" type="text/javascript"></script>
-</body>
+    {% include nav.html %}
+    {{content}}
+    {% include footer.html %}
+  </body>
+  {% include scripts.html %}
+</html>

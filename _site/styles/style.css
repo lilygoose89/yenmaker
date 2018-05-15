@@ -1,8 +1,3 @@
-/* html.noscroll, html.noscroll body {
-  overflow: hidden !important;
-  position: relative;
-  height: 100%;
-} */
 * {
   font-family: 'Kanit', sans-serif;
   color: #2C3238;
@@ -14,10 +9,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* div {
-  border: 1px green solid;
-} */
-
 
 /* typography */
 h1 {
@@ -84,10 +75,27 @@ ul {
   transition: all 0.1s ease-in-out;
 }
 .button-main:hover {
-  border-radius: 0 40px;
+  border-radius: 1px;
   border: none;
 }
-
+.button-outline {
+  font-family: 'Maitree', serif;
+  padding: 1em 10%;
+  background-color: transparent;
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  border: solid white 2px;
+  border: solid rgba(255, 255, 255, 0.8) 2px;
+  border-radius: 1px 25px;
+  font-size: 1em;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.button-outline:hover {
+  border-radius: 1px;
+}
 
 /* sections */
 section {
@@ -134,8 +142,8 @@ section {
 .bg-grey {
   background-color: rgb(151, 171, 177);
 }
-.bg-gold {
-  background-color: rgba(199, 180, 115, 0.6)
+.bg-light-grey {
+  background-color: rgba(151, 171, 177, 0.2)
 }
 .bg-dark {
   background-color: #424b54;
@@ -149,7 +157,6 @@ section {
 nav {
   position: fixed;
   height: 45px;
-  width: 100%;
   z-index: 999;
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
@@ -161,13 +168,9 @@ nav h2 {
   font-weight: lighter;
 }
 .logo {
-  padding-top: 45px;
-  height: 22vh;
-  width: auto;
+  height: 20vh;
+  /* width: auto; */
 }
-/* .header-section {
-  padding-top: 45px;
-} */
 
 /* Icon 3 */
 .hamburger-wrapper {
@@ -179,6 +182,7 @@ nav h2 {
   width: 40px;
   margin: 10px auto;
   position: absolute;
+  top: 18px;
   left: 18px;
   z-index: 9;
   -webkit-transform: rotate(0deg);
@@ -258,9 +262,9 @@ nav h2 {
   width: 20vw;
   height: 100vh;
   position: fixed;
-  /* padding: 2%; */
+  padding: 2%;
   top: 0;
-  left: -20vw;
+  left: -100vw;
   z-index: 99999;
   overflow: hidden;
   overflow-y: scroll;
@@ -299,6 +303,28 @@ nav h2 {
   font-size: 1em;
   line-height: 1.5em;
 }
+.icon-side-nav {
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 6px;
+  min-width: 6px;
+}
+@media all and (max-width:1024px) {
+  .says-menu {
+    display: none;
+  }
+  #sidebar {
+    width: 30vw !important;
+  }
+}
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:576px) {
+  #sidebar {
+    width: 100vw !important;
+  }
+}
 
 
 /* footer styles */
@@ -312,24 +338,31 @@ footer h6,footer a,footer i {
   min-width: 10px;
 }
 
-
 /* hero styles */
 .hero-section {
-  padding: 0 7%;
-  height: 70vh;
+  padding: 0 10.5%;
+  height: 75vh;
   margin-bottom: 10vh;
 }
 .hero-image-home {
-  background-image: url("/images/yenmakershop.jpg");
+  background-image: url("/images/bw-1645.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   overflow-y: hidden;
 }
+.home-image-about {
+  background-image: url("/images/yenmakershop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+  overflow-y: hidden;
+}
 
 .bg-handcrafted {
-  background-image: url("/images/bw-1657.jpg");
+  background-image: url("/images/bw-1669.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
